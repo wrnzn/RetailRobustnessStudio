@@ -18,8 +18,7 @@ import torch.nn.functional as F
 
 
 APP_DIR = Path(__file__).resolve().parent
-DEFAULT_ARTIFACT = Path(r"D:\Codes 2\Project\fruits360_mobilenetv3_mobilevit_artifact.pkl")
-ARTIFACT_PATH = DEFAULT_ARTIFACT if DEFAULT_ARTIFACT.exists() else APP_DIR.parent / "fruits360_mobilenetv3_mobilevit_artifact.pkl"
+ARTIFACT_PATH = APP_DIR / "fruits360_mobilenetv3_mobilevit_artifact.pkl"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 

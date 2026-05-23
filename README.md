@@ -12,12 +12,11 @@ This app showcases the exported `.pkl` artifact as a usable research system:
 - inspect clean and corrupted robustness metrics
 - benchmark model latency and model size for edge-readiness discussion
 
-## Run
+## Run Locally
 
-Use the CUDA Python environment:
-
-```powershell
-& 'C:\Users\naosh\Documents\Codes\ebook2audiobook\python_env\python.exe' app.py
+```bash
+pip install -r requirements.txt
+python app.py
 ```
 
 Then open:
@@ -28,16 +27,16 @@ http://127.0.0.1:7860
 
 ## Smoke Test
 
-```powershell
-& 'C:\Users\naosh\Documents\Codes\ebook2audiobook\python_env\python.exe' smoke_test.py
+```bash
+python smoke_test.py
 ```
 
 ## Artifact
 
-Default artifact path:
+The app expects the `.pkl` artifact in the root directory:
 
 ```text
-D:\Codes 2\Project\fruits360_mobilenetv3_mobilevit_artifact.pkl
+fruits360_mobilenetv3_mobilevit_artifact.pkl
 ```
 
 The artifact stores model state dictionaries, class labels, normalization, clean metrics, robustness metrics, and training metadata.
